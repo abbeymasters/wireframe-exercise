@@ -1,10 +1,17 @@
 .header-grid {
     display: flex;
+    flex-wrap: wrap;
     height: 70px;
     width: 100%;
     margin-bottom: 15px;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background: #a1a1a1;
+    height: 100px;
+}
+
+nav {
+    display: flex;
 }
 
 #first-section, #second-section, #third-section {
@@ -35,13 +42,25 @@ h2 {
     line-height: 1.8em;
 }
 
-p {
+#third-section-text p {
     font-style: italic;
 }
 
 #third-section-button {
     margin-top: 10px;
     background: black;
+    border-radius: 5px;
     color: white;
-    padding: 5px 20px;
+    padding: 8px 25px;
+    transition: 0.35s;
+}
+
+#third-section-button:hover {
+    background-color: #a1a1a1;
+    color: white;
+}
+
+footer {
+    background: #a1a1a1;
+    height: 150px;
 }
